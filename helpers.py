@@ -1,6 +1,5 @@
 import numpy as np
-from skimage.morphology import convex_hull_image, erosion
-from skimage.morphology import square
+from skimage.morphology import convex_hull_image, erosion, square
 from eth_keys import keys
 from eth_utils import decode_hex
 import imageio.v2 as imageio

@@ -18,4 +18,8 @@ def getWallet(img_name):
     private_key  = getPrivateKey(minutiaeTerm, minutiaeBif)
     return private_key, getAddress(private_key)
 
-print(getWallet(display_list[1]))
+for display in display_list:
+    print(display)
+    pkey, addr = getWallet(display)
+    print("Private Key:",pkey)
+    print("Public Address:",addr,"\n")
